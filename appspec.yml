@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /target/*.jar
-    destination:/opt/tomcat/apache-tomcat-8.5.57/webapps/apache-test/
+    destination: /opt/tomcat/apache-tomcat-8.5.57/webapps/apache-test/
 hooks:
   BeforeInstall:
     - location: scripts/start_server
@@ -12,4 +12,3 @@ hooks:
     - location: scripts/stop_server
       timeout: 300
       runas: root
- /opt/tomcat/apache-tomcat-8.5.57/bin/./startup.sh
