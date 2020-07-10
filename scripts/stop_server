@@ -1,0 +1,6 @@
+#!/bin/bash
+isExistApp=`pgrep java`
+if [[ -n  $isExistApp ]]; then
+     /opt/tomcat/apache-tomcat-8.5.57/bin/./shutdown.sh        
+fi
+
