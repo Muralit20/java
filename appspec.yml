@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: target/SimpleTomcatWebApp.war
+  - source: target/my-app-1.0-SNAPSHOT.jar
     destination: /opt/tomcat/apache-tomcat-8.5.57/webapps/apache-test/
 hooks:
   BeforeInstall:
